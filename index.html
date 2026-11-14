@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gifted Hand Computer Business Centre, Delsu Campus 2, Abraka, Delta State. Printing, photocopy, typing, online registration, graphic design, computer training, repairs and more.">
+  <meta name="theme-color" content="#071b36">
+  <title>Gifted Hand Computer Business Centre | Abraka</title>
+  <style>
+    :root{--navy:#071b36;--blue:#1266db;--cyan:#16c5d5;--gold:#ffbd45;--ink:#17243a;--muted:#66758b;--pale:#f3f7fc;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}
+    .topbar{background:#041226;color:#dce8f7;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{background:rgba(7,27,54,.97);color:white;position:sticky;top:0;z-index:10;box-shadow:0 5px 20px #00142b22}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}.brand-mark{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--cyan),var(--blue));display:grid;place-items:center;font-size:23px}
+    .brand small{display:block;color:#a9bdd6;font-size:10px;letter-spacing:1.7px;font-weight:600}
+    .navlinks{display:flex;gap:25px;align-items:center;font-size:14px;color:#dce8f7}.navlinks a:hover{color:var(--cyan)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:9px;padding:12px 18px;font-weight:750;background:var(--gold);color:#15233a}
+    .hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(circle at 82% 22%,#164d88 0,transparent 32%),linear-gradient(120deg,#071b36 0%,#0b2b50 60%,#063c63 100%);padding:94px 0 88px}
+    .hero:after{content:"";position:absolute;width:460px;height:460px;border:1px solid #ffffff17;border-radius:50%;right:-100px;top:-120px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff05}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;position:relative;z-index:1}
+    .eyebrow{display:inline-block;color:#8cebf0;background:#16c5d51c;border:1px solid #16c5d555;border-radius:99px;padding:7px 13px;font-size:12px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase}
+    h1{font-size:clamp(38px,5.5vw,65px);line-height:1.08;letter-spacing:-2px;margin:20px 0}.hero h1 span{color:var(--cyan)}
+    .hero p{color:#c5d5e8;font-size:17px;max-width:600px;margin:0 0 28px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.btn-primary{background:var(--gold);color:#17243a}.btn-outline{border:1px solid #ffffff70;color:white;background:#ffffff0c}
+    .hero-card{background:#ffffff10;border:1px solid #ffffff24;border-radius:22px;padding:28px;backdrop-filter:blur(8px);box-shadow:0 25px 65px #00132955}
+    .hero-card h3{margin:0 0 17px;font-size:20px}.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .quick{background:#ffffff0c;border:1px solid #ffffff16;border-radius:13px;padding:15px}.quick b{display:block;font-size:14px}.quick span{font-size:12px;color:#b8cde3}
+    .section{padding:82px 0}.section-soft{background:var(--pale)}.section-head{text-align:center;max-width:690px;margin:0 auto 42px}.kicker{color:var(--blue);font-weight:800;font-size:12px;letter-spacing:1.8px;text-transform:uppercase}.section h2{font-size:clamp(29px,4vw,42px);line-height:1.2;margin:9px 0 12px;color:var(--navy);letter-spacing:-1px}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service{background:white;border:1px solid #e5edf6;border-radius:16px;padding:23px;transition:.2s;box-shadow:0 7px 22px #12345a08}.service:hover{transform:translateY(-4px);box-shadow:0 14px 30px #12345a12;border-color:#c8def7}
+    .service-icon{width:47px;height:47px;display:grid;place-items:center;background:#eaf4ff;border-radius:13px;font-size:23px;margin-bottom:15px}.service h3{margin:0 0 7px;color:var(--navy);font-size:17px}.service p{margin:0;color:var(--muted);font-size:14px}
+    .highlight{background:linear-gradient(110deg,#0a2a4c,#0a4770);color:white;border-radius:22px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.highlight h2{color:white;margin:0 0 8px}.highlight p{color:#c7d8e8;margin:0}
+    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.why{padding:23px;border-radius:15px;background:white;border:1px solid #e5edf6}.why b{display:block;color:var(--navy);margin:9px 0 4px}.why p{font-size:13px;color:var(--muted);margin:0}.why-icon{font-size:24px}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:stretch}.contact-panel{background:var(--navy);color:white;border-radius:20px;padding:32px}.contact-panel h2{color:white}.contact-panel>p{color:#bfd0e2}.contact-item{display:flex;gap:13px;margin:22px 0;align-items:flex-start}.contact-item .ico{font-size:20px}.contact-item small{display:block;color:#9fb5cd}.contact-item b{font-size:15px;overflow-wrap:anywhere}
+    .contact-side{padding:12px 0}.contact-side h3{font-size:25px;color:var(--navy);margin:0 0 10px}.contact-side p{color:var(--muted)}.contact-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.contact-buttons .btn{padding:14px 20px}.blue{background:var(--blue);color:white}.light{background:#eaf2fc;color:var(--navy)}
+    footer{background:#041226;color:#b5c5d8;padding:28px 0;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-row strong{color:white}
+    .wa-float{position:fixed;right:22px;bottom:22px;z-index:20;background:#20c76a;color:white;border-radius:50px;padding:13px 18px;font-weight:800;box-shadow:0 8px 25px #002b1a44}
+    @media(max-width:850px){.hero-grid,.contact-grid{grid-template-columns:1fr}.hero-card{max-width:600px}.services{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}.navlinks{gap:13px}}
+    @media(max-width:620px){.topbar .wrap{justify-content:center;text-align:center}nav{padding:13px 0;align-items:flex-start}.navlinks{display:none}.nav-cta{padding:10px 12px;font-size:12px}.hero{padding:70px 0}.hero-grid{gap:35px}.hero p{font-size:15px}.services,.why-grid{grid-template-columns:1fr}.section{padding:65px 0}.highlight{padding:28px;display:block}.highlight .btn{margin-top:20px}.brand{font-size:14px}.brand-mark{width:39px;height:39px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>📍 Delsu, Campus 2, Abraka, Delta State, Nigeria</span><span>☎ +234 906 706 5459 &nbsp; | &nbsp; ✉ giftedhandcomputer@gmail.com</span></div></div>
+  <header><nav class="wrap">
+    <a class="brand" href="#home"><span class="brand-mark">⌘</span><span>GIFTED HAND<small>COMPUTER BUSINESS CENTRE</small></span></a>
+    <div class="navlinks"><a href="#home">Home</a><a href="#services">Our Services</a><a href="#about">Why Choose Us</a><a href="#contact">Contact</a></div>
+    <a class="nav-cta" href="https://wa.me/2349067065459" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+  </nav></header>
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div><span class="eyebrow">Your trusted digital service centre</span>
+        <h1>Smart Solutions.<br><span>Quality Service.</span></h1>
+        <p>From everyday printing and document services to online registrations, graphic design, computer training and repairs — we help you get things done quickly and professionally.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="https://wa.me/2349067065459" target="_blank" rel="noopener">Get in Touch on WhatsApp ↗</a><a class="btn btn-outline" href="#services">Explore Our Services ↓</a></div>
+      </div>
+      <div class="hero-card"><h3>Everything you need, in one place.</h3><div class="quick-grid">
+        <div class="quick"><b>🖨️ Print & Copy</b><span>Printing, photocopy, scanning</span></div>
+        <div class="quick"><b>📝 Online Services</b><span>Forms, registrations, payments</span></div>
+        <div class="quick"><b>🎨 Creative Design</b><span>Graphics, CVs, letterheads</span></div>
+        <div class="quick"><b>💻 Tech Support</b><span>Training, repairs, web design</span></div>
+      </div></div>
+    </div></section>
+
+    <section class="section" id="services"><div class="wrap">
+      <div class="section-head"><span class="kicker">What we do</span><h2>Our Services & Offers</h2><p>Reliable business, document and technology services to support students, individuals and businesses.</p></div>
+      <div class="services">
+        <article class="service"><div class="service-icon">🖨️</div><h3>Printing & Document Services</h3><p>Photocopy, typing, printing, scanning, laminating, binding and professional document preparation.</p></article>
+        <article class="service"><div class="service-icon">📄</div><h3>CVs & Business Documents</h3><p>CV writing, letterheads with or without logos, email creation, checking mail and sending mail.</p></article>
+        <article class="service"><div class="service-icon">🧾</div><h3>Online Registration & Forms</h3><p>Post-UTME, JAMB, NYSC, N-Power, WAEC, NECO GCE, and Police, Army, Navy and Air Force forms.</p></article>
+        <article class="service"><div class="service-icon">💳</div><h3>Online Payments & Scratch Cards</h3><p>Online payment assistance and WAEC and NECO scratch cards.</p></article>
+        <article class="service"><div class="service-icon">🎨</div><h3>Graphic & Website Design</h3><p>Creative graphic design, website design and visual materials for your business or personal brand.</p></article>
+        <article class="service"><div class="service-icon">🌐</div><h3>Internet & Bulk SMS</h3><p>Internet services and bulk SMS solutions for communication and business outreach.</p></article>
+        <article class="service"><div class="service-icon">🎓</div><h3>Computer Training</h3><p>Practical computer training to help you build useful digital and workplace skills.</p></article>
+        <article class="service"><div class="service-icon">🔧</div><h3>Computer & Phone Repairs</h3><p>Computer repair, phone repair and technical assistance for your devices.</p></article>
+        <article class="service"><div class="service-icon">🛍️</div><h3>Sales & More</h3><p>Sales of available products and many other helpful computer business centre services.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section section-soft" id="about"><div class="wrap">
+      <div class="highlight"><div><span class="kicker" style="color:#8cebf0">Your work made easier</span><h2>One Centre. Many Solutions.</h2><p>Visit us at DELSU, Campus 2, Abraka, for convenient digital and business support.</p></div><a class="btn btn-primary" href="https://wa.me/2349067065459" target="_blank" rel="noopener">Contact Us Today ↗</a></div>
+      <div class="section-head" style="margin-top:58px"><span class="kicker">Why work with us</span><h2>Service You Can Count On</h2><p>We are ready to help with your documents, registrations and technology needs.</p></div>
+      <div class="why-grid">
+        <div class="why"><span class="why-icon">⚡</span><b>Convenient Service</b><p>Multiple services available at one location.</p></div>
+        <div class="why"><span class="why-icon">🤝</span><b>Helpful Support</b><p>Friendly assistance with your service requests.</p></div>
+        <div class="why"><span class="why-icon">💡</span><b>Digital Know-how</b><p>Support for everyday computer and online tasks.</p></div>
+        <div class="why"><span class="why-icon">📍</span><b>Easy to Find</b><p>Located at DELSU, Campus 2, Abraka.</p></div>
+      </div>
+    </div></section>
+
+    <section class="section" id="contact"><div class="wrap contact-grid">
+      <div class="contact-panel"><span class="kicker" style="color:#8cebf0">Get in touch</span><h2>Let's help you get it done.</h2><p>Contact us for enquiries, service requests and more information.</p>
+        <div class="contact-item"><span class="ico">📞</span><div><small>Call / WhatsApp</small><b>+234 906 706 5459</b></div></div>
+        <div class="contact-item"><span class="ico">📍</span><div><small>Office Address</small><b>Delsu, Campus 2, Abraka, Delta State, Nigeria</b></div></div>
+        <div class="contact-item"><span class="ico">✉️</span><div><small>Email</small><b>giftedhandcomputer@gmail.com</b></div></div>
+        <div class="contact-item"><span class="ico">🌐</span><div><small>Website</small><b>www.wordinform.site</b></div></div>
+      </div>
+      <div class="contact-side"><span class="kicker">We're ready when you are</span><h3>Need a document, registration or tech service?</h3><p>Send us a message on WhatsApp or give us a call. You can also email us with details of what you need.</p>
+        <div class="contact-buttons"><a class="btn blue" href="https://wa.me/2349067065459" target="_blank" rel="noopener">WhatsApp Us ↗</a><a class="btn light" href="tel:+2349067065459">Call Now</a><a class="btn light" href="mailto:giftedhandcomputer@gmail.com">Send an Email</a></div>
+        <p style="margin-top:30px;font-size:13px">Website: <a href="https://www.wordinform.site" target="_blank" rel="noopener" style="color:var(--blue);font-weight:700">www.wordinform.site ↗</a></p>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer-row"><span>© <span id="year">2026</span> <strong>Gifted Hand Computer Business Centre</strong>. All rights reserved.</span><span>Delsu, Campus 2 · Abraka, Delta State, Nigeria</span></div></footer>
+  <a class="wa-float" href="https://wa.me/2349067065459" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">☏ WhatsApp</a>
+</body>
+</html>
